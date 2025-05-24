@@ -1,6 +1,5 @@
-Task Management:ASP.NET Core MVC CRUD Operations
-
-Technologies:
-- .NET 8 
+This project is a web-based task management application built using:
+- ASP.NET Core MVC
+- .NET 8
 - Entity Framework Core
 - SQL Server

@@ -196,3 +196,4 @@ C:\Users\aymen\source\repos\TaskManagement\obj\Debug\net8.0\scopedcss\projectbun
 C:\Users\aymen\source\repos\TaskManagement\obj\Debug\net8.0\TaskMana.75ABC965.Up2Date
 C:\Users\aymen\source\repos\TaskManagement\obj\Debug\net8.0\TaskManagement.genruntimeconfig.cache
 C:\Users\aymen\source\repos\TaskManagement\obj\Debug\net8.0\ref\TaskManagement.dll
+C:\Users\aymen\source\repos\TaskManagement\obj\Debug\net8.0\TaskManagement.sourcelink.json
