@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\aymen\\source\\repos\\TaskManagement\\wwwroot\\js\\priorityBadgeScript.js",
+      "PackagePath": "staticwebassets\\js\\priorityBadgeScript.js"
+    },
+    {
       "Id": "C:\\Users\\aymen\\source\\repos\\TaskManagement\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

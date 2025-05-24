@@ -46,3 +46,12 @@ button.accept-policy[b-7opx5vu9t6] {
   white-space: nowrap;
   line-height: 60px;
 }
+
+#successToastContainer[b-7opx5vu9t6] {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+

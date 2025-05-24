@@ -35,10 +35,34 @@
             @RenderBody()
         </main>
     </div>
+<div id="successToastContainer">
+    <div id="successToast" class="toast align-items-center text-bg-success border-0" role="alert" 
+         aria-live="assertive" aria-atomic="true" data-bs-autohide="true" data-bs-delay="5000">
+        <div class="d-flex"  style="background-color: #d4edda;">
+            <div class="toast-body">
+                @TempData["SuccessMessage"]
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+    </div>
+</div>
 
+
+<script>
+    window.onload = () => {
+        const successMessage = '@TempData["SuccessMessage"]';
+        if (successMessage && successMessage.trim() !== '') {
+            const toastEl = document.getElementById('successToast');
+            if (toastEl) {
+                const toast = new bootstrap.Toast(toastEl);
+                toast.show();
+            }
+        }
+    };
+</script>
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - TaskManagement - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2025 - TaskManagement
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

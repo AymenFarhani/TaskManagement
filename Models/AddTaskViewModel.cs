@@ -7,5 +7,10 @@ public class AddTaskViewModel
     public string Description { get; set; }
     public DateOnly CreatedAt { get; set; } = DateOnly.FromDateTime(DateTime.UtcNow);
 
-        public TaskPriority Priority { get; set; } = TaskPriority.Medium;
+    public DateTime LastModified  { get; set; } = DateTime.UtcNow;
+
+    public DateOnly DueDate { get; set; }  = DateOnly.FromDateTime(DateTime.UtcNow);
+
+    public Status Status { get; set; } = Status.ToDo;
+    public TaskPriority Priority { get; set; } = TaskPriority.Medium;
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yCdj7BDPwSNNaoYIexGVOeN8sT4a0tf+mrldEN1ShUs=",
+  "Hash": "kusPEWoAaAOyeNSlz5rSwngTyTJT3ohYXpWl3ljgPxQ=",
   "Source": "TaskManagement",
   "BasePath": "_content/TaskManagement",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\aymen\\source\\repos\\TaskManagement\\wwwroot\\js\\priorityBadgeScript.js",
+      "SourceId": "TaskManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aymen\\source\\repos\\TaskManagement\\wwwroot\\",
+      "BasePath": "_content/TaskManagement",
+      "RelativePath": "js/priorityBadgeScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\priorityBadgeScript.js"
     },
     {
       "Identity": "C:\\Users\\aymen\\source\\repos\\TaskManagement\\wwwroot\\js\\site.js",

@@ -1,7 +1,8 @@
-@model TaskManagement.Models.AddTaskViewModel
+@model TaskManagement.Models.Entities.TaskItem
 
 
 <h1>Add Task</h1>
+
 <form asp-action="AddTask" method="post">
 
 <div  class="mt-3">
@@ -16,14 +17,35 @@
     <label class="form-label">CreatedAt</label>
     <input type="date" class="form-control" asp-for="CreatedAt"/>
 </div>
-<div class="mt-3">
-    <label class="form-label">Priority</label>
-    <select class="form-select" asp-for="Priority" asp-items="Html.GetEnumSelectList<TaskManagement.Models.Entities.TaskPriority>()">
-        <option value="">Select priority</option>
-    </select>
+<div class="form-group">
+    <label asp-for="DueDate"></label>
+    <input asp-for="DueDate" class="form-control" type="date" min="@DateTime.Today.ToString("yyyy-MM-dd")"/>
 </div>
+
+<div class="form-group">
+    <label class="form-label">Status</label>
+    <select asp-for="Status" class="form-select" asp-items="Html.GetEnumSelectList<TaskManagement.Models.Entities.Status>()"></select>
+    <span asp-validation-for="Status" class="text-danger"></span>
+</div>
+<div class="form-group mt-3">
+    <label class="form-label">Priority</label>
+    <div class="d-flex align-items-center gap-2 mt-1">
+        <select id="prioritySelect" asp-for="Priority" class="form-select w-auto" asp-items="Html.GetEnumSelectList<TaskManagement.Models.Entities.TaskPriority>()"></select>
+        <span id="priorityBadge" class="rounded-circle d-inline-block" style="width: 16px; height: 16px;"></span>
+        <span asp-validation-for="Priority" class="text-danger ms-2"></span>
+    </div>
+</div>
+<div class="form-group">
+    <label class="form-label">Last Modified Date</label>
+    <input asp-for="LastModified" class="form-control" readonly />
+</div>
+
+
 <div  class="mt-3">
     <button type="submit" class="btn btn-primary">AddTask</button>
 </div>
 
 </form>
+@section Scripts {
+    <script src="~/js/priorityBadgeScript.js"></script>
+}
